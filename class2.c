@@ -12,9 +12,9 @@
 int _class_2_weight_height_struct_and_simple_condition(void) {
     WeightAndHeight pseudoObj = {84, 177};
     printf("Hello, World!\n");
-    printf("Weight: %d kg\n",pseudoObj.weight );
-    printf("Height: %d cm\n",pseudoObj.height );
-    printf("Max possible height: %d cm\n", MAX_HEIGHT );
+    printf("Weight: %d kg\n", pseudoObj.weight);
+    printf("Height: %d cm\n", pseudoObj.height);
+    printf("Max possible height: %d cm\n", MAX_HEIGHT);
 
     if (pseudoObj.height > MAX_HEIGHT) {
         printf("Height is too high!\n");
@@ -26,7 +26,7 @@ int _class_2_weight_height_struct_and_simple_condition(void) {
 
 int _class_2_weight_height_pointers_to_addresses_play(void) {
     int x = 25;
-    int* y = &x;
+    int *y = &x;
     printf("x: %i \ny: %p \n", x, y);
     printf("x: %i \ny: %d \n", x, *y);
     *y = 30;
@@ -43,5 +43,22 @@ int _class_2_weight_height_addresses_malloc(void) {
     printf("sizeof(int) = %lu", sizeof(int));
     free(y);
     y = NULL;
+    return 0;
+}
+
+int _class_2_weight_height_using_pointer_by_malloc_and_access_its_properties(void) {
+    WeightAndHeight *person = (WeightAndHeight *) malloc(sizeof(WeightAndHeight));
+    person->weight = 80;
+    person->height = 185;
+    printf("Weight: %d kg\n", person->weight);
+    printf("Height: %d cm\n", person->height);
+
+    if (person->height > MAX_HEIGHT) {
+        printf("Height is over the limit!\n");
+    } else {
+        printf("Height is below the limit\n");
+    }
+    free(person);
+    person = NULL;
     return 0;
 }

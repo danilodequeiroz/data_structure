@@ -8,7 +8,7 @@
 #include "class2.h"
 
 #define MAX_HEIGHT 300
-#define CLASS 4
+#define CLASS 5
 
 int main(void) {
     switch (CLASS) {
@@ -19,6 +19,8 @@ int main(void) {
         case 3: _class_2_weight_height_pointers_to_addresses_play();
             break;
         case 4: _class_2_weight_height_addresses_malloc();
+            break;
+        case 5: _class_2_weight_height_using_pointer_by_malloc_and_access_its_properties();
             break;
         default:
             printf("Wrong number of class, define the CLASS constant\n");

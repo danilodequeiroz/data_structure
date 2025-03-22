@@ -5,5 +5,6 @@
 int _class_2_weight_height_struct_and_simple_condition(void);
 int _class_2_weight_height_pointers_to_addresses_play(void);
 int _class_2_weight_height_addresses_malloc(void);
+int _class_2_weight_height_using_pointer_by_malloc_and_access_its_properties(void);
 
 #endif
