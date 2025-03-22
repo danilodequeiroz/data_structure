@@ -7,12 +7,12 @@ int main(void) {
     printf("Hello, World!\n");
     printf("Weight: %d kg\n",pseudoObj.weight );
     printf("Height: %d cm\n",pseudoObj.height );
-    printf("Max possible height: %d mm\n", MAX_HEIGHT );
+    printf("Max possible height: %d cm\n", MAX_HEIGHT );
 
     if (pseudoObj.height > MAX_HEIGHT) {
         printf("Height is too high!\n");
     } else {
-        printf("Height is %d\n cm", pseudoObj.height);
+        printf("Height is %d cm\n", pseudoObj.height);
     }
     return 0;
 }
