@@ -8,7 +8,7 @@
 
 #define MAX_HEIGHT 300
 
-int _pseudo_main_function_class_1(void) {
+int _class_1_weight_height_struct(void) {
     WeightAndHeight pseudoObj = {84, 177};
     printf("Hello, World!\n");
     printf("Weight: %d kg\n",pseudoObj.weight );

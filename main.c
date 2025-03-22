@@ -10,10 +10,10 @@
 
 int main(void) {
     switch (CLASS) {
-        case 1:_pseudo_main_function_class_1();
-        case 2:_pseudo_main_function_class_2();
+        case 1: _class_1_weight_height_struct();
+        case 2: _class_2_weight_height_struct_and_simple_condition();
+        case 3: _class_2_weight_height_pointers_to_addresses_play();
         default: ;
     }
     return 0;
 }
-

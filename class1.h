@@ -2,6 +2,6 @@
 #ifndef CLASS1_H
 #define CLASS1_H
 
-int _pseudo_main_function_class_1(void);
+int _class_1_weight_height_struct(void);
 
 #endif
