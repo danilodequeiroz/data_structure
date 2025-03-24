@@ -20,7 +20,9 @@ int main(void) {
             break;
         case 4: _class_2_weight_height_addresses_malloc();
             break;
-        case 5: _class_2_weight_height_using_pointer_by_malloc_and_access_its_properties();
+        case 5: _class_2_weight_height_test_long_long();
+            break;
+        case 6: _class_2_weight_height_using_pointer_by_malloc_and_access_its_properties();
             break;
         default:
             printf("Wrong number of class, define the CLASS constant\n");

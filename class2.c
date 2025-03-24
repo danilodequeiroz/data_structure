@@ -40,7 +40,7 @@ int _class_2_weight_height_addresses_malloc(void) {
     *y = 20;
     const int z = sizeof(int);
     printf("y = %p \n*y = %i \nz = %i \n", y, *y, z);
-    printf("sizeof(int) = %lu", sizeof(int));
+    printf("sizeof(int) = %lu\n", sizeof(int));
     free(y);
     y = NULL;
     return 0;
@@ -60,5 +60,13 @@ int _class_2_weight_height_using_pointer_by_malloc_and_access_its_properties(voi
     }
     free(person);
     person = NULL;
+    return 0;
+}
+
+int _class_2_weight_height_test_long_long(void) {
+    long long largeNumber = 123456789012345LL;
+
+    printf("largeNumber = %lu\n", largeNumber);
+    printf("sizeof(long long) = %lu\n", sizeof(long long));
     return 0;
 }
