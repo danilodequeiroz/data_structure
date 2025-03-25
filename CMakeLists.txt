@@ -7,4 +7,8 @@ add_executable(data_structure class1.c
         weight_and_height.h
         class2.c
         main.c
+        class3.c
+        class3.h
+        linear_list_functions.c
+        linear_list_functions.h
 )

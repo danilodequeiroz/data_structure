@@ -6,9 +6,10 @@
 
 #include "class1.h"
 #include "class2.h"
+#include "class3.h"
 
 #define MAX_HEIGHT 300
-#define CLASS 5
+#define CLASS 7
 
 int main(void) {
     switch (CLASS) {
@@ -23,6 +24,8 @@ int main(void) {
         case 5: _class_2_weight_height_test_long_long();
             break;
         case 6: _class_2_weight_height_using_pointer_by_malloc_and_access_its_properties();
+            break;
+        case 7: _class_3_linear_list_implementation_1();
             break;
         default:
             printf("Wrong number of class, define the CLASS constant\n");

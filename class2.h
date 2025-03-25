@@ -1,4 +1,3 @@
-// class2.h
 #ifndef CLASS2_H
 #define CLASS2_H
 
