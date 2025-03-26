@@ -2,6 +2,8 @@
 // Created by Danilo de Queiroz on 24/03/25.
 //
 
+#include <stdbool.h>
+
 #include "linear_list.h"
 
 #ifndef LINEAR_LIST_FUNCTIONS_2_H
@@ -11,14 +13,16 @@
 
 int initialize(LIST* list);
 
-int sizeOf(LIST* list);
+int size_of(const LIST* list);
 
-int printListElements(LIST* list);
+int print_list_elements(const LIST* list);
 
-int search(int);
+int search(const LIST *list, const KEY_TYPE key);
 
-int insert(LIST* list);
+int search_for(const LIST* list, const KEY_TYPE key);
 
-int delete(LIST* list);
+bool insert(LIST* list, REGISTER new_register, int position);
 
-int clear(LIST* list);
+bool delete(KEY_TYPE to_be_deleted, LIST *list);
+
+void clear(LIST* list);

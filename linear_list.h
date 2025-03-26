@@ -8,7 +8,7 @@
 typedef int KEY_TYPE;
 
 typedef struct {
-  KEY_TYPE keyType;
+  KEY_TYPE key;
   // other fields ...
 } REGISTER;
 
